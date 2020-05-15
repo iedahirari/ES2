@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.container-items{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 25px;
+}
+
+#titulo-logo{
+	font-weight: 600;
+	font-size: 60px;
+	color: #6B4226;
+}
+
+#menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	padding: 15px 0;
+	background-color: rgb(254,174,227);
+}
+
+#menu p{
+	margin-right: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#menu img{
+	margin-right: 25px;
+}
+
+#container{
+	display: flex; /* ajuda a posicionar melhor*/
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 35px 0;
+}
+
+#sub-container{
+	width: auto;
+	height: auto;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.fileira{
+	display: flex;
+	width: 100%;
+	height: auto;
+}
+
+.field{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 130px;
+	height: 130px;
+	font-size: 64px;
+	font-weight: 600;
+	color: rgb(254,174,227);
+	cursor: pointer; /* ficar a maozinhar*/
+}
+
+.field:hover {
+	opacity: 0.5;
+}
+
+#field1{
+	border-right: 3px solid #795548;
+	border-bottom: 3px solid #795548;
+}
+
+#field2{
+	border-right: 3px solid #795548;
+	border-bottom: 3px solid #795548;
+}
+
+#field3{
+	border-bottom: 3px solid #795548;
+}
+
+#field4{
+	border-right: 3px solid #795548;
+	border-bottom: 3px solid #795548;
+}
+
+#field5{
+	border-right: 3px solid #795548;
+	border-bottom: 3px solid #795548;
+}
+
+#field6{
+	border-bottom: 3px solid #795548;
+}
+
+#field7{
+	border-right: 3px solid #795548;
+}
+
+#field8{
+	border-right: 3px solid #795548;
+}
+
+.btn-iniciar{
+	width: auto;
+	height: auto;
+	background-color: #795548;
+	font-size: 17px;
+	font-weight: 600;
+	color: rgb(254,174,227);
+	cursor: pointer;
+	padding: 5px 10px;
+}
+
+.btn-iniciar:hover{
+	opacity: 0.5;
+}
+
+#container-items-btns{
+	margin-top: 25px;
+}
+
+#btn-iniciar-single{
+	margin-right: 25px;
+}
+
+#desfecho{
+	display: none;
+	position: absolute;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+	height: auto;
+	font-size: 32px;
+	font-weight: 600;
+	color: #5e3f34;
+}
+
+#btn-novamente{
+	width: 200px;
+	height: auto;
+	background-color: #795548;
+	font-size: 17px;
+	font-weight: 600;
+	color: rgb(254,174,227);
+	cursor: pointer;
+	padding: 5px 0;
+	margin-top: 15px;
+}
+
+#btn-novamente:hover{
+	opacity: 0.5;
+}
+
+
+
+
