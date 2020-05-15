@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-png" href="./imgs/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<title> MONITORAÊ </title>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script>
+		jQuery(document).ready(function($){
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$("html,body").animate({scrollTop:$(this.hash).offset().top},800);
+			});
+		});
+	</script>
+</head>
+<body>	
+	<!-- MENU -->
+		<div class="header-2">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <a href="index.html"> <img src="./imgs/logo.png" ></a>
+		 <div class="menu">
+			<ul>
+				<li>
+					<a href="PerfilPrefeito.html">Prefeito</a>
+				</li>
+				<li>
+					<a href="PerfilVereador.html">Vereadores</a>
+				</li>
+				<li>
+					<a href="#bg-2">Servidores</a>
+				</li>
+				<li>
+					<a  class="scroll" href="#session2">Notícias</a>
+				</li>
+				<li>
+					<a class="scroll" href="#session3">Dashboard</a>
+				</li>
+				<li>
+					<a href="#bg"> Relatórios</a>
+				</li>
+			</ul>
+		 </div>
+		 <div class="busca">
+				<input id="home" type="text" placeholder="O que você procura?                        " value="" tabindex="1" autocomplete="off">
+		 </div>
+		</div>
+		<!-- SESSION 1 - vereadores -->
+		<div id="session1" class="vereadores-lista" >
+			
+		</div>
+			<!-- SESSION 2 - noticias -->
+		<div id="session2" class="noticias-lista"> 
+			
+		</div>
+			<!-- SESSION 3 - dashboard -->
+		<div id="session3" class="dashboard-lista">
+			
+		</div>
+			<!-- SESSION 4 - rodape -->
+		<div id="session4" class="rodape-lista">
+		</div>
+		<!-- POP UP relatorios -->
+		<div id="bg"> </div>
+		<div class="box">
+			<a href="" id="close"> x </a>
+			<div class="tituloRel">
+				RELATÓRIOS 
+			</div>
+			<p>
+			  Pesquise de acordo com os filtros os relatórios que desejar!
+			</p>
+			<div class="tipo">
+				<form method="post" action="">
+					<select name="relatorio" style="width:150px;" >
+						<option value="selecione">Selecione</option>
+						<option value="gastos">Gastos </option>
+						<option value="projetos">Projetos</option>
+					</select>
+				</form>
+			</div>
+
+			<div class="classi">
+				<form method="post" action="">
+					<select name="relatorio">
+						<option value="selecione">Selecione</option>
+						<option value="gastos">Geral </option>
+						<option value="projetos">Individual</option>
+					</select>
+				</form>
+		     </div>
+
+		     <div class="periodo">
+				<input id="peri1" type="date" id="diaa" name="diaa">
+		     	<label> á </label>
+		     	<input id="peri2" type="date" id="diaa" name="diaa">
+		     </div>
+			<div class="rela">
+				<button id="rela">Gerar Relatório</button>
+			</div>
+			<div class="mensagem2"> Seu relatório será gerado em formato PDF! basta clicar no botão acima.
+			</div>
+		</div>
+		<!-- POP UP servidores -->
+		<div id="bg-2"> </div>
+		<div class="box-2">
+			<a href="" id="close-2"> x </a>
+			<div class="tituloSer">
+				SERVIDORES 
+			</div>
+			<p>
+			  Localize com a ajuda dos filtros os servidores que desejar!
+			</p>
+		</div>
+</body>
+</html>
