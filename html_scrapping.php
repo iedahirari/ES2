@@ -4,9 +4,11 @@ include('simple_html_dom.php');
 
 $html = file_get_html('http://cmmc.com.br/vereadores/');
 
-echo file_get_html('http://cmmc.com.br/vereadores/');
+/*echo file_get_html('http://cmmc.com.br/vereadores/');*/
 
-foreach($html->find('img') as $element)
+echo $html-> find ('table', 10);
+
+foreach($html->find('table') as $element)
        echo $element->src . '<br>';
 
 
