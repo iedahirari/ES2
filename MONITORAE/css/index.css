@@ -18,6 +18,7 @@ body{
 	justify-content: space-between;
 	padding: 0 15px 0 15px;
 	height: 80px;
+	z-index: 9999;
 }
 .header-2 input{
 	padding: 7px;
@@ -50,24 +51,59 @@ body{
 	float: right;
 }
 .vereadores-lista{
-	background-color: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/*align-items: center;*/
+	/*background-color: red;*/
 	width: 100%;
-	height: 500px;
+	height: auto;
+	flex-wrap: wrap;
+	padding: 130px 0;
+}
+.listafotos{
+	margin-left: 5%;
+	width: 100%;
+	height: auto;
+	flex-wrap: wrap;
+
+
+}
+.ListaCompleta{
+	display: inline-block;
+	justify-content: center;
+	flex-direction: center;
+	background-color: #ffb230;
+	color: #ffffff;
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	text-underline-position: center;
+	font-weight: bold;
+	font-size: 15px;
+	margin-left: 45%;
+	border-radius: 2%;
+	vertical-align: middle;
+}
+#AA{
+	display: flex;
+	justify-content: flex-start;
+	justify-content: flex-start;
 }
 .noticias-lista{
-	background-color: yellow;
 	width: 100%;
 	height: 500px;
 }
 .dashboard-lista{
-	background-color: pink;
 	width: 100%;
 	height: 500px;
 }
 .rodape-lista{
-	background-color: orange;
+	border-top: 3px solid #7fffd4;
+	background-color: rgb(38,38,38);
 	width: 100%;
-	height: 500px;
+	height: 300px;
+
 }
 img{
 	margin-top: 15px;
@@ -199,6 +235,11 @@ input{
 	left:29%;
 	height: 80%;
 	width: 43%;
+	z-index: -1;
+}
+
+.barravereadores{
+	background-color: red;
 }
 
 /* perfil prefeito */
@@ -237,22 +278,24 @@ input{
 	width: 70%;
 	right: 0;
 }
-
 .bloco1{
-	position: absolute;
 	top: 5%;
-	height: 25%;
 	width: 100%;
 	color: rgb(255, 178, 41);
 	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
 	font-size: 17px;
 	font-weight: bold;
+	text-align: justify;
+}
+.descricao{
+	color: #6c6c6c;
+	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
+	font-size: 16px;
+	margin-right: 4%;
+	font-weight: normal;
 }
 
 .bloco2{
-	position: absolute;
-	top:30%;
-	height: 25%;
 	width: 100%;
 	color: rgb(255, 178, 41);
 	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
@@ -260,9 +303,6 @@ input{
 	font-weight: bold;
 }
 .bloco3{
-	position: absolute;
-	top:55%;
-	height: 25%;
 	width: 100%;
 	color: rgb(255, 178, 41);
 	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
@@ -270,9 +310,6 @@ input{
 	font-weight: bold;
 }
 .bloco4{
-	position: absolute;
-	top:80%;
-	height: 25%;
 	width: 100%;
 	color: rgb(255, 178, 41);
 	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
@@ -280,16 +317,13 @@ input{
 	font-weight: bold;
 }
 .bloco5{
-	position: absolute;
-	top:105%;
-	height: 25%;
 	width: 100%;
 	color: rgb(255, 178, 41);
 	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
 	font-size: 17px;
 	font-weight: bold;
 }
-
+*/
 /* pop up - relatorio */
 #bg{
 	width: 100%;
@@ -349,6 +383,7 @@ p{
 	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
 	font-size: 17px;
 }
+
 .tipo{
 	padding-top: 5%;
 	display: flex;
@@ -453,6 +488,7 @@ label{
 	top:-510px;
 	border: 1px solid #C0C0C0;
 }
+
 #close-2{
 	display: flex;
 	justify-content: center;
@@ -477,4 +513,143 @@ label{
 	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
 	font-size: 25px;
 	font-weight: bold;
+}
+.segura{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1500px;
+}
+.toticias{
+	display: flex;
+	padding-top: 30px;
+	padding-left: 20px;
+	color: #03bb85;
+	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.titulonoticia{
+	display: flex;
+	padding-top: 30px;
+	padding-left: 30px;
+	color: #6c6c6c;
+	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+}
+.corponoticia{
+	display: flex;
+	justify-content: center;
+	position: center;
+	padding-top: 10px;
+	padding-left: 30px;
+	width: 85%;
+	color: #6c6c6c;
+	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+}
+.linknoticia{
+	display: flex;
+	padding-top: 5px;
+	padding-left: 30px;
+	color: #c0c0c0;
+	font-family: "Trebuchet MS", Arial, Tahoma, sans-serif;
+	font-size: 13px;
+}
+.FATEC{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10%;
+	margin-top: 13%;
+	font-size: 20px;
+	color: #ffffff;
+	font-family: "Ode to Idle Gaming", Arial, Tahoma, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+.quemsomos{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	margin-top: -12%;
+	margin-left: 2%;
+	font-size: 17px;
+	color: #ffffff;
+	font-family: "Ode to Idle Gaming", Arial, Tahoma, sans-serif;
+	text-align: justify;
+}
+.alunos{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: -17%;
+	margin-left: 60%;
+	font-size: 17px;
+	color: #ffffff;
+	font-family: "Ode to Idle Gaming", Arial, Tahoma, sans-serif;
+}
+.email{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.direitos{
+	display: block;
+	justify-content: center;
+	margin-top: 4%;
+	font-size: 12px;
+	color: #ffffff;
+	font-family: "Ode to Idle Gaming", Arial, Tahoma, sans-serif;
+	text-align: center;
+}
+#email{
+	margin: 0 15px 0 0;
+	width: 16px;
+	height: 16px;
+}
+.nomealuno{
+	display: flex;
+	justify-content: flex-start;
+	width: 50%;
+}
+
+.linkemail{
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+	color:#111;
+	text-decoration:none;
+}
+
+.foto-vereadores{
+	width: 150px;
+	height: 150px;
+	background-color: green;
+	border-radius: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border:3px solid #ffb230;
+}
+
+#foto1{
+	background-image: url('../imgs/FotoVereadores/antonio.jpg');
+}
+
+#foto2{
+	background-image: url('../imgs/FotoVereadores/benedito.jpg');
+}
+
+#foto3{
+	background-image: url('../imgs/FotoVereadores/caio.jpg');
+}
+
+#foto4{
+	background-image: url('../imgs/FotoVereadores/carlos.jpg');
 }
